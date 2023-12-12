@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - "*"
+  push:
+    branches:
+      - master
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+          check-latest: true
+
+      - name: Install yq
+        run: |
+          curl -fsSL -o yqq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
+          chmod +x yqq
+          sudo mv yqq /usr/local/bin/yqq
+          pip3 install yq
+
+      - name: Install Hugo
+        run: |
+          curl -fsSL -o hugo_extended.deb https://github.com/gohugoio/hugo/releases/download/v0.111.1/hugo_extended_0.111.1_linux-amd64.deb
+          sudo dpkg -i hugo_extended.deb
+
+      - name: Install link checker
+        run: |
+          curl -fsSL -o liche https://github.com/appscodelabs/liche/releases/download/v0.1.0/liche-linux-amd64
+          chmod +x liche
+          sudo mv liche /usr/local/bin/liche
+
+      - name: Install npm packages
+        run: |
+          npm install
+
+      - name: Build
+        run: make gen-prod
+
+      # - name: Check links
+      #   run: |
+      #     hugo server --minify --config=config.yaml &>/dev/null &
+      #     make check-links

@@ -1,0 +1,71 @@
+title: Kubernetes Config Syncer
+baseurl: https://config-syncer.com
+languageCode: en-us
+assetDir: static
+googleAnalytics: UA-62096468-4
+disableKinds:
+- taxonomy
+- taxonomyTerm
+params:
+  product_key: configsyncer
+  main_menu_dropdown_item: database
+  domain_appscode: https://appscode-v3-hugo.web.app
+  domain_bytebuilders: https://appscode.com
+  domain_configsyncer: https://config-syncer.com
+  domain_gateway: https://gateway.voyagermesh.com
+  domain_guard: https://kubeguard.dev
+  domain_kubeci: https://kubeci-v1-hugo.web.app
+  domain_kubedb: https://kubedb-v2-hugo.web.app
+  domain_kubeform: https://kubeform-v1-hugo.web.app
+  domain_kubeshield: https://kubeshield-v1-hugo.web.app
+  domain_kubestash: https://kubestash.com
+  domain_kubevault: https://kubevault-v1-hugo.web.app
+  domain_marketplace: https://marketplace.appscode.com
+  domain_pharmer: https://pharmer-v1-hugo.web.app
+  domain_stash: https://stashed-v1-hugo.web.app
+  domain_voyagermesh: https://voyagermesh-v1-hugo.web.app
+  search_api_key: 8fd610038d901dd16a111e6f1568343bb969b084a1952dafdcb1545fd8c35e96
+  blog_url: https://blog.appscode.com
+  slack_url: https://slack.appscode.com
+  github_url: https://github.com/appscode
+  twitter_url: https://twitter.com/AppsCodeHQ
+  facebook_url: https://www.facebook.com/appscode
+  youtube_url: https://www.youtube.com/c/AppsCodeInc
+  contact_email: support@appscode.com
+  contact_phone: +1(650)241-8486
+menu:
+  main:
+  - name: Documentation
+    weight: 20
+  - name: Community
+    identifier: community
+    weight: 25
+  - name: GitHub
+    identifier: github
+    parent: community
+    url: https://github.com/stashed
+    weight: 1
+  - name: Twitter
+    identifier: twitter
+    parent: community
+    url: https://twitter.com/KubeStash
+    weight: 2
+  - name: Slack
+    identifier: slack
+    parent: community
+    url: https://slack.appscode.com
+    weight: 3
+menu:
+  main:
+  - name: Documentation
+    weight: 20
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: manni
+outputs:
+  home:
+  - HTML
+  - JSON

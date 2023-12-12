@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "prod": "appscode-domains",
+    "default": "kubedb-new-e7965"
+  },
+  "targets": {
+    "kubedb-new-e7965": {
+      "hosting": {
+        "hugo": [
+          "kubestash-qa"
+        ]
+      }
+    },
+    "appscode-domains": {
+      "hosting": {
+        "hugo": [
+          "config-syncer"
+        ]
+      }
+    }
+  }
+}
