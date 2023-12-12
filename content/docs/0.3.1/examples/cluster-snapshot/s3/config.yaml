@@ -1,0 +1,8 @@
+snapshotter:
+  s3:
+    region: us-west-2
+    bucket: bucket-for-snapshot
+    prefix: minikube
+  storageSecretName: snap-secret
+  sanitize: true
+  schedule: '@every 6h'

@@ -1,0 +1,904 @@
+{
+  "key": "kubedb",
+  "name": "KubeDB",
+  "fullname": "KubeDB by AppsCode",
+  "tagline": "Run Production-Grade Databases on Kubernetes",
+  "summary": "KubeDB simplifies Provision, Upgrade, Scaling, Volume Expansion, Monitor, Backup, Restore for various Databases in Kubernetes on any Public & Private Cloud",
+  "published": true,
+  "author": "AppsCode Inc.",
+  "website": {
+    "domainKey": "domain_kubedb",
+    "path": "",
+    "themeColor": "#4D4DCB"
+  },
+  "keywords": "kubernetes, kubernetes database, database high availability, postgresql kubernetes, elasticsearch kubernetes, mysql kubernetes, etcd, mariadb kubernetes, memcached, mongodb kubernetes, percona xtradb, redis, scaling kubernetes, version upgrade kubernetes, volume expansion kubernetes, kubernetes database management",
+  "heroImage": {
+    "src": "/assets/images/products/kubedb/kubedb-hero.png",
+    "alt": "KubeDB"
+  },
+  "logo": {
+    "src": "/assets/images/products/kubedb/kubedb.svg",
+    "alt": "KubeDB"
+  },
+  "logoWhite": {
+    "src": "/assets/images/products/kubedb/kubedb-white.png",
+    "alt": "KubeDB"
+  },
+  "icon": {
+    "src": "/assets/images/products/kubedb/kubedb-icon.svg",
+    "alt": "KubeDB",
+    "sizes": {
+      "192x192": "/assets/images/products/kubedb/icons/android-icon-192x192.png"
+    }
+  },
+  "repoURL": "https://github.com/kubedb/docs",
+  "starRepo": "kubedb/cli",
+  "docRepo": "kubedb/docs",
+  "datasheetFormID": "9d6f5a4d3fe306ecf3b9ca3c8e121265bcf355b2c3f198a8439cf9035bbda0e7",
+  "badges": [
+    {
+      "url": "kubedb",
+      "alt": "GitHub",
+      "logo": "github"
+    },
+    {
+      "url": "docker/pulls/kubedb/operator",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
+  "videos": {
+    "intro": "CuQ6qvVBb0g"
+  },
+  "features": [
+    {
+      "title": "Lower administrative burden",
+      "url": "provision-databases-on-kubernetes",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/easy-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/dumbbell.png",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "KubeDB simplifies many of the difficult or tedious management tasks of running a production grade databases on private and public clouds. Maintain one stack for all your stateless and stateful applications and simplify the operational complexity."
+    },
+    {
+      "title": "Native Kubernetes Support",
+      "url": "deploy-databases-in-kubernetes-native-way",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/multi-cloud-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/kubernetes.png",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "Runs on any Kubernetes distribution including OpenShift, Rancher, VMware Tanzu. If you can run Kubernetes, you can provision and manage databases using KubeDB. Use standard Kubernetes CLI and API to provision and manage databases."
+    },
+    {
+      "title": "Performance",
+      "url": "increase-database-performance-on-kubernetes",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/performance-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/muscle.png",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "KubeDB uses Persistent Volume Claims (PVC) to dynamically provision disks for database instances. Using appropriately defined StorageClasses,  KubeDB provisioned database instances are designed to scale from small development workloads up to performance-intensive workloads on private and public cloud environments."
+    },
+    {
+      "title": "Availability and durability",
+      "url": "backup-restore-databases-on-kubernetes",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/availability-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/last-24-hours.png",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "KubeDB will backup your database and transaction logs at a user defined frequency and store both for a user-specified retention period in a cloud object store (S3, GCS, etc.) or local filesystem (like NFS, etc.). You can also initiate one-off backups. KubeDB uses Stash by AppsCode to take deduplicated and encrypted backups so that you only incur the cost of incremental storage use. You can create a new instance from a database snapshots whenever you desire."
+    },
+    {
+      "title": "Manageability",
+      "url": "monitor-databases-on-kubernetes",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/monitoring-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/prometheus.svg",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "KubeDB comes with native support for monitoring via Prometheus. You can use builtin Prometheus scrapper or CoreOS Prometheus Operator to monitor KubeDB supported databases as well as KubeDB operator itself. You can use the Grafana to view key operational metrics, including compute/memory/storage capacity utilization, I/O activity, and instance connections. You can also use any metrics solutions like Datadog with KubeDB."
+    },
+    {
+      "title": "Cost-effectiveness",
+      "url": "manage-database-on-kubernetes-free",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/low-price-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/low-price.png",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "KubeDB is free to use on any supported Kubernetes engines. There is no up-front investment required, and you pay only for the resources you use to your infrastructure provider. And, when you’re finished with a database instance, you can easily delete it."
+    },
+    {
+      "title": "Security",
+      "url": "secure-databases-on-kubernetes",
+      "image": {
+        "src": "/assets/images/products/kubedb/features/security-lg.png",
+        "alt": "http"
+      },
+      "icon": {
+        "src": "/assets/images/products/kubedb/features/security-lock.png",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "You can secure your Databases with TLS using KubeDB. Also, KubeDB allows you to use encrypted storage for your databases using keys you manage through your cloud provider’s key management service."
+    }
+  ],
+  "versions": [
+    {
+      "version": "master",
+      "hostDocs": false,
+      "show": true
+    },
+    {
+      "version": "v2023.12.11",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.23.0",
+        "cli": "v0.38.0",
+        "dashboard": "v0.14.0",
+        "installer": "v2023.12.11",
+        "ops-manager": "v0.25.0",
+        "provisioner": "v0.38.0",
+        "schema-manager": "v0.14.0",
+        "ui-server": "v0.14.0",
+        "webhook-server": "v0.14.0"
+      }
+    },
+    {
+      "version": "v2023.12.1-rc.1",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.23.0-rc.1",
+        "cli": "v0.38.0-rc.1",
+        "dashboard": "v0.14.0-rc.1",
+        "installer": "v2023.12.1-rc.1",
+        "ops-manager": "v0.25.0-rc.1",
+        "provisioner": "v0.38.0-rc.1",
+        "schema-manager": "v0.14.0-rc.1",
+        "ui-server": "v0.14.0-rc.1",
+        "webhook-server": "v0.14.0-rc.1"
+      }
+    },
+    {
+      "version": "v2023.11.29-rc.0",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.23.0-rc.0",
+        "cli": "v0.38.0-rc.0",
+        "dashboard": "v0.14.0-rc.0",
+        "installer": "v2023.11.29-rc.0",
+        "ops-manager": "v0.25.0-rc.0",
+        "provisioner": "v0.38.0-rc.0",
+        "schema-manager": "v0.14.0-rc.0",
+        "ui-server": "v0.14.0-rc.0",
+        "webhook-server": "v0.14.0-rc.0"
+      }
+    },
+    {
+      "version": "v2023.11.2",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.22.0",
+        "cli": "v0.37.0",
+        "dashboard": "v0.13.0",
+        "installer": "v2023.11.2",
+        "ops-manager": "v0.24.0",
+        "provisioner": "v0.37.0",
+        "schema-manager": "v0.13.0",
+        "ui-server": "v0.13.0",
+        "webhook-server": "v0.13.0"
+      }
+    },
+    {
+      "version": "v2023.10.9",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.21.0",
+        "cli": "v0.36.0",
+        "dashboard": "v0.12.0",
+        "installer": "v2023.10.9",
+        "ops-manager": "v0.23.0",
+        "provisioner": "v0.36.0",
+        "schema-manager": "v0.12.0",
+        "ui-server": "v0.12.0",
+        "webhook-server": "v0.12.0"
+      }
+    },
+    {
+      "version": "v2023.08.18",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.20.0",
+        "cli": "v0.35.0",
+        "dashboard": "v0.11.0",
+        "installer": "v2023.08.18",
+        "ops-manager": "v0.22.0",
+        "provisioner": "v0.35.0",
+        "schema-manager": "v0.11.0",
+        "ui-server": "v0.11.0",
+        "webhook-server": "v0.11.0"
+      }
+    },
+    {
+      "version": "v2023.06.19",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.19.0",
+        "cli": "v0.34.0",
+        "dashboard": "v0.10.0",
+        "installer": "v2023.06.19",
+        "ops-manager": "v0.21.0",
+        "provisioner": "v0.34.0",
+        "schema-manager": "v0.10.0",
+        "ui-server": "v0.10.0",
+        "webhook-server": "v0.10.0"
+      }
+    },
+    {
+      "version": "v2023.06.13-rc.0",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.19.0-rc.0",
+        "cli": "v0.34.0-rc.0",
+        "dashboard": "v0.10.0-rc.0",
+        "installer": "v2023.06.13-rc.0",
+        "ops-manager": "v0.21.0-rc.0",
+        "provisioner": "v0.34.0-rc.0",
+        "schema-manager": "v0.10.0-rc.0",
+        "ui-server": "v0.10.0-rc.0",
+        "webhook-server": "v0.10.0-rc.0"
+      }
+    },
+    {
+      "version": "v2023.04.10",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.18.0",
+        "cli": "v0.33.0",
+        "dashboard": "v0.9.0",
+        "installer": "v2023.04.10",
+        "ops-manager": "v0.20.0",
+        "provisioner": "v0.33.0",
+        "schema-manager": "v0.9.0",
+        "ui-server": "v0.9.0",
+        "webhook-server": "v0.9.0"
+      }
+    },
+    {
+      "version": "v2023.02.28",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.17.0",
+        "cli": "v0.32.0",
+        "dashboard": "v0.8.0",
+        "installer": "v2023.02.28",
+        "ops-manager": "v0.19.0",
+        "provisioner": "v0.32.0",
+        "schema-manager": "v0.8.0",
+        "ui-server": "v0.8.0",
+        "webhook-server": "v0.8.0"
+      }
+    },
+    {
+      "version": "v2023.01.31",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.16.0",
+        "cli": "v0.31.0",
+        "dashboard": "v0.7.0",
+        "installer": "v2023.01.31",
+        "ops-manager": "v0.18.0",
+        "provisioner": "v0.31.0",
+        "schema-manager": "v0.7.0",
+        "ui-server": "v0.7.0",
+        "webhook-server": "v0.7.0"
+      }
+    },
+    {
+      "version": "v2023.01.17",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.15.1",
+        "cli": "v0.30.1",
+        "dashboard": "v0.6.1",
+        "installer": "v2023.01.17",
+        "ops-manager": "v0.17.1",
+        "provisioner": "v0.30.1",
+        "schema-manager": "v0.6.1",
+        "ui-server": "v0.6.1",
+        "webhook-server": "v0.6.1"
+      }
+    },
+    {
+      "version": "v2022.12.28",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.15.0",
+        "cli": "v0.30.0",
+        "dashboard": "v0.6.0",
+        "installer": "v2022.12.28",
+        "ops-manager": "v0.17.0",
+        "provisioner": "v0.30.0",
+        "schema-manager": "v0.6.0",
+        "ui-server": "v0.6.0",
+        "webhook-server": "v0.6.0"
+      }
+    },
+    {
+      "version": "v2022.12.24-rc.1",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.15.0-rc.1",
+        "cli": "v0.30.0-rc.1",
+        "dashboard": "v0.6.0-rc.1",
+        "installer": "v2022.12.24-rc.1",
+        "ops-manager": "v0.17.0-rc.1",
+        "provisioner": "v0.30.0-rc.1",
+        "schema-manager": "v0.6.0-rc.1",
+        "ui-server": "v0.6.0-rc.1",
+        "webhook-server": "v0.6.0-rc.1"
+      }
+    },
+    {
+      "version": "v2022.12.13-rc.0",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.15.0-rc.0",
+        "cli": "v0.30.0-rc.0",
+        "dashboard": "v0.6.0-rc.0",
+        "installer": "v2022.12.13-rc.0",
+        "ops-manager": "v0.17.0-rc.0",
+        "provisioner": "v0.30.0-rc.0",
+        "schema-manager": "v0.6.0-rc.0",
+        "ui-server": "v0.6.0-rc.0",
+        "webhook-server": "v0.6.0-rc.0"
+      }
+    },
+    {
+      "version": "v2022.10.18",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.14.0",
+        "cli": "v0.29.0",
+        "dashboard": "v0.5.0",
+        "installer": "v2022.10.18",
+        "ops-manager": "v0.16.0",
+        "provisioner": "v0.29.0",
+        "schema-manager": "v0.5.0",
+        "ui-server": "v0.5.0",
+        "webhook-server": "v0.5.0"
+      }
+    },
+    {
+      "version": "v2022.10.12-rc.0",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.14.0-rc.0",
+        "cli": "v0.29.0-rc.0",
+        "dashboard": "v0.5.0-rc.0",
+        "installer": "v2022.10.12-rc.0",
+        "ops-manager": "v0.16.0-rc.0",
+        "provisioner": "v0.29.0-rc.0",
+        "schema-manager": "v0.5.0-rc.0",
+        "ui-server": "v0.5.0-rc.0",
+        "webhook-server": "v0.5.0-rc.0"
+      }
+    },
+    {
+      "version": "v2022.08.08",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.13.0",
+        "cli": "v0.28.0",
+        "dashboard": "v0.4.0",
+        "installer": "v2022.08.08",
+        "ops-manager": "v0.15.0",
+        "provisioner": "v0.28.0",
+        "schema-manager": "v0.4.0",
+        "ui-server": "v0.4.0",
+        "webhook-server": "v0.4.0"
+      }
+    },
+    {
+      "version": "v2022.08.04-rc.1",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.13.0-rc.1",
+        "cli": "v0.28.0-rc.1",
+        "dashboard": "v0.4.0-rc.1",
+        "installer": "v2022.08.04-rc.1",
+        "ops-manager": "v0.15.0-rc.1",
+        "provisioner": "v0.28.0-rc.1",
+        "schema-manager": "v0.4.0-rc.1",
+        "ui-server": "v0.4.0-rc.1",
+        "webhook-server": "v0.4.0-rc.1"
+      }
+    },
+    {
+      "version": "v2022.08.02-rc.0",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.13.0-rc.0",
+        "cli": "v0.28.0-rc.0",
+        "dashboard": "v0.4.0-rc.0",
+        "installer": "v2022.08.02-rc.0",
+        "ops-manager": "v0.15.0-rc.0",
+        "provisioner": "v0.28.0-rc.0",
+        "schema-manager": "v0.4.0-rc.0",
+        "ui-server": "v0.4.0-rc.0",
+        "webhook-server": "v0.4.0-rc.0"
+      }
+    },
+    {
+      "version": "v2022.05.24",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.12.0",
+        "cli": "v0.27.0",
+        "dashboard": "v0.3.0",
+        "installer": "v2022.05.24",
+        "ops-manager": "v0.14.0",
+        "provisioner": "v0.27.0",
+        "schema-manager": "v0.3.0",
+        "ui-server": "v0.3.0",
+        "webhook-server": "v0.3.0"
+      }
+    },
+    {
+      "version": "v2022.03.28",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.11.0",
+        "cli": "v0.26.0",
+        "community": "v0.26.0",
+        "dashboard": "v0.2.0",
+        "enterprise": "v0.13.0",
+        "installer": "v2022.03.28",
+        "schema-manager": "v0.2.0",
+        "ui-server": "v0.2.0",
+        "webhook-server": "v0.2.0"
+      }
+    },
+    {
+      "version": "v2022.02.22",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.10.0",
+        "cli": "v0.25.0",
+        "community": "v0.25.0",
+        "dashboard": "v0.1.0",
+        "enterprise": "v0.12.0",
+        "installer": "v2022.02.22",
+        "schema-manager": "v0.1.0",
+        "ui-server": "v0.1.0",
+        "webhook-server": "v0.1.0"
+      }
+    },
+    {
+      "version": "v2021.12.21",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.9.2",
+        "cli": "v0.24.0",
+        "community": "v0.24.2",
+        "enterprise": "v0.11.2",
+        "installer": "v2021.12.21"
+      }
+    },
+    {
+      "version": "v2021.11.24",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.9.0",
+        "cli": "v0.24.0",
+        "community": "v0.24.0",
+        "enterprise": "v0.11.0",
+        "installer": "v2021.11.24"
+      }
+    },
+    {
+      "version": "v2021.11.18",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.8.0",
+        "cli": "v0.23.0",
+        "community": "v0.23.0",
+        "enterprise": "v0.10.0",
+        "installer": "v2021.11.18"
+      }
+    },
+    {
+      "version": "v2021.09.30",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.7.0",
+        "cli": "v0.22.0",
+        "community": "v0.22.0",
+        "enterprise": "v0.9.0",
+        "installer": "v2021.09.30"
+      }
+    },
+    {
+      "version": "v2021.09.09",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.6.0",
+        "cli": "v0.21.0",
+        "community": "v0.21.0",
+        "enterprise": "v0.8.0",
+        "installer": "v2021.09.09"
+      }
+    },
+    {
+      "version": "v2021.08.23",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.5.0",
+        "cli": "v0.20.0",
+        "community": "v0.20.0",
+        "enterprise": "v0.7.0",
+        "installer": "v2021.08.23"
+      }
+    },
+    {
+      "version": "v2021.06.23",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.4.0",
+        "cli": "v0.19.0",
+        "community": "v0.19.0",
+        "enterprise": "v0.6.0",
+        "installer": "v2021.06.23"
+      }
+    },
+    {
+      "version": "v2021.06.21-rc.0",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.4.0-rc.0",
+        "cli": "v0.19.0-rc.0",
+        "community": "v0.19.0-rc.0",
+        "enterprise": "v0.6.0-rc.0",
+        "installer": "v2021.06.21-rc.0"
+      }
+    },
+    {
+      "version": "v2021.04.16",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.3.0",
+        "cli": "v0.18.0",
+        "community": "v0.18.0",
+        "enterprise": "v0.5.0",
+        "installer": "v2021.04.16"
+      }
+    },
+    {
+      "version": "v2021.03.17",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.2.1",
+        "cli": "v0.17.1",
+        "community": "v0.17.1",
+        "enterprise": "v0.4.1",
+        "installer": "v0.17.1"
+      }
+    },
+    {
+      "version": "v2021.03.11",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.2.0",
+        "cli": "v0.17.0",
+        "community": "v0.17.0",
+        "enterprise": "v0.4.0",
+        "installer": "v0.17.0",
+        "release": "v2021.03.11"
+      }
+    },
+    {
+      "version": "v2021.01.26",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.1.2",
+        "cli": "v0.16.2",
+        "community": "v0.16.2",
+        "enterprise": "v0.3.2",
+        "installer": "v0.16.2"
+      }
+    },
+    {
+      "version": "v2021.01.15",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.1.1",
+        "cli": "v0.16.1",
+        "community": "v0.16.1",
+        "enterprise": "v0.3.1",
+        "installer": "v0.16.1"
+      }
+    },
+    {
+      "version": "v2021.01.14",
+      "hostDocs": true,
+      "info": {
+        "autoscaler": "v0.1.0",
+        "cli": "v0.16.0",
+        "community": "v0.16.0",
+        "enterprise": "v0.3.0",
+        "installer": "v0.16.0"
+      }
+    },
+    {
+      "version": "v2021.01.02-rc.0",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "autoscaler": "v0.1.0-rc.0",
+        "cli": "v0.16.0-rc.0",
+        "community": "v0.16.0-rc.0",
+        "enterprise": "v0.3.0-rc.0",
+        "installer": "v0.16.0-rc.0"
+      }
+    },
+    {
+      "version": "v2020.12.10",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.15.2",
+        "community": "v0.15.2",
+        "enterprise": "v0.2.2",
+        "installer": "v0.15.2"
+      }
+    },
+    {
+      "version": "v2020.11.12",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.15.1",
+        "community": "v0.15.1",
+        "enterprise": "v0.2.1",
+        "installer": "v0.15.1"
+      }
+    },
+    {
+      "version": "v2020.11.11",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.15.0",
+        "community": "v0.15.0",
+        "enterprise": "v0.2.0",
+        "installer": "v0.15.0"
+      }
+    },
+    {
+      "version": "v2020.11.08",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.14.1",
+        "community": "v0.14.1",
+        "enterprise": "v0.1.1",
+        "installer": "v0.14.1"
+      }
+    },
+    {
+      "version": "v2020.10.28",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.14.0",
+        "community": "v0.14.0",
+        "enterprise": "v0.1.0",
+        "installer": "v0.14.0"
+      }
+    },
+    {
+      "version": "v2020.10.27-rc.2",
+      "hostDocs": true,
+      "info": {
+        "cli": "v0.14.0-rc.2",
+        "community": "v0.14.0-rc.2",
+        "enterprise": "v0.1.0-rc.2",
+        "installer": "v0.14.0-rc.2"
+      }
+    },
+    {
+      "version": "v2020.10.27-rc.1",
+      "hostDocs": true,
+      "info": {
+        "cli": "v0.14.0-rc.1",
+        "community": "v0.14.0-rc.1",
+        "enterprise": "v0.1.0-rc.1",
+        "installer": "v0.14.0-rc.1"
+      }
+    },
+    {
+      "version": "v2020.10.27-rc.0",
+      "hostDocs": true,
+      "info": {
+        "cli": "v0.14.0-beta.6",
+        "community": "v0.14.0-beta.6",
+        "enterprise": "v0.1.0-beta.6",
+        "installer": "v0.14.0-beta.6"
+      }
+    },
+    {
+      "version": "v2020.10.26-beta.0",
+      "hostDocs": true,
+      "info": {
+        "cli": "v0.14.0-beta.5",
+        "community": "v0.14.0-beta.5",
+        "enterprise": "v0.1.0-beta.5",
+        "installer": "v0.14.0-beta.5"
+      }
+    },
+    {
+      "version": "v2020.10.24-beta.0",
+      "hostDocs": true,
+      "info": {
+        "cli": "v0.14.0-beta.4",
+        "community": "v0.14.0-beta.4",
+        "enterprise": "v0.1.0-beta.4",
+        "installer": "v0.14.0-beta.4"
+      }
+    },
+    {
+      "version": "v2020.09.04-beta.0",
+      "hostDocs": true
+    },
+    {
+      "version": "v2020.07.10-beta.0",
+      "hostDocs": true
+    },
+    {
+      "version": "v0.13.0-rc.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.12.0",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "0.11.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.10.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.9.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.9.0-rc.2",
+      "hostDocs": true
+    },
+    {
+      "version": "0.9.0-rc.1",
+      "hostDocs": true
+    },
+    {
+      "version": "0.9.0-rc.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0-rc.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0-beta.2",
+      "hostDocs": true
+    },
+    {
+      "version": "0.8.0-beta.0",
+      "hostDocs": true
+    },
+    {
+      "version": "0.7.1",
+      "hostDocs": false
+    },
+    {
+      "version": "0.6.0",
+      "hostDocs": false
+    }
+  ],
+  "latestVersion": "v2023.12.11",
+  "socialLinks": {
+    "facebook": "https://facebook.com/appscode",
+    "github": "https://github.com/kubedb",
+    "linkedin": "https://www.linkedin.com/company/appscode",
+    "slack": "https://kubernetes.slack.com/messages/C8149MREV",
+    "twitter": "https://twitter.com/KubeDB",
+    "youtube": "https://www.youtube.com/c/appscodeinc"
+  },
+  "description": {
+    "html": "<h1>KubeDB</h1>\n\n<p><a href=\"https://goreportcard.com/report/kubedb.dev/cli\"><img src=\"https://goreportcard.com/badge/kubedb.dev/cli\" alt=\"Go Report Card\" /></a>\n<a href=\"https://travis-ci.org/kubedb/cli\"><img src=\"https://travis-ci.org/kubedb/cli.svg?branch=master\" alt=\"Build Status\" /></a>\n<a href=\"https://codecov.io/gh/kubedb/cli\"><img src=\"https://codecov.io/gh/kubedb/cli/branch/master/graph/badge.svg\" alt=\"codecov\" /></a>\n<a href=\"https://hub.docker.com/r/kubedb/operator/\"><img src=\"https://img.shields.io/docker/pulls/kubedb/operator.svg\" alt=\"Docker Pulls\" /></a>\n<a href=\"http://slack.kubernetes.io/#kubedb\"><img src=\"http://slack.kubernetes.io/badge.svg\" alt=\"Slack\" /></a>\n<a href=\"https://groups.google.com/forum/#!forum/kubedb\"><img src=\"https://img.shields.io/badge/mailing_list-join-blue.svg\" alt=\"mailing list\" /></a>\n<a href=\"https://twitter.com/intent/follow?screen_name=kubedb\"><img src=\"https://img.shields.io/twitter/follow/kubedb.svg?style=social&amp;logo=twitter&amp;label=Follow\" alt=\"Twitter\" /></a></p>\n\n<blockquote>\n<p>Making running production-grade databases easy on Kubernetes</p>\n</blockquote>\n\n<p>Running production quality database in Kubernetes can be tricky to say the least. In the early days of Kubernetes, replication controllers were used to run a single pod for a database. With the introduction of StatefulSet, it became easy to run a docker container for any database. But what about monitoring, taking periodic backups, restoring from backups or cloning from an existing database? KubeDB is a framework for writing operators for any database that support the following operational requirements:</p>\n\n<ul>\n<li>Create a database declaratively using CRD.</li>\n<li>Take one-off backups or periodic backups to various cloud stores, eg, S3, GCS, Azure etc.</li>\n<li>Restore from backup or clone any database.</li>\n<li>Native integration with Prometheus for monitoring via <a href=\"https://github.com/coreos/prometheus-operator\">CoreOS Prometheus Operator</a>.</li>\n<li>Apply deletion lock to avoid accidental deletion of database.</li>\n<li>Keep track of deleted databases, cleanup prior snapshots with a single command.</li>\n<li>Use cli to manage databases like kubectl for Kubernetes.</li>\n</ul>\n\n<p>KubeDB is developed at <a href=\"https://twitter.com/AppsCodeHQ\">AppsCode</a> to run their SAAS platform on Kubernetes. Currently KubeDB includes support for following datastores:\n - Postgres\n - Elasticsearch\n - Etcd\n - MySQL / MariaDB / Percona Server for MySQL\n - MongoDB\n - Redis\n - Memcached</p>\n\n<h2>Supported Versions</h2>\n\n<p>Please pick a version of KubeDB that matches your Kubernetes installation.</p>\n\n<table>\n<thead>\n<tr>\n<th>KubeDB Version</th>\n<th>Docs</th>\n<th>Kubernetes Version</th>\n</tr>\n</thead>\n\n<tbody>\n<tr>\n<td><a href=\"https://github.com/kubedb/cli/releases/tag/0.12.0\">0.12.0</a> (uses CRD)</td>\n<td><a href=\"https://kubedb.com/docs/0.12.0/\">User Guide</a></td>\n<td>1.9.x +</td>\n</tr>\n\n<tr>\n<td><a href=\"https://github.com/kubedb/cli/releases/tag/0.11.0\">0.11.0</a> (uses CRD)</td>\n<td><a href=\"https://kubedb.com/docs/0.11.0/\">User Guide</a></td>\n<td>1.9.x +</td>\n</tr>\n\n<tr>\n<td><a href=\"https://github.com/kubedb/cli/releases/tag/0.10.0\">0.10.0</a> (uses CRD)</td>\n<td><a href=\"https://kubedb.com/docs/0.10.0/\">User Guide</a></td>\n<td>1.9.x +</td>\n</tr>\n\n<tr>\n<td><a href=\"https://github.com/kubedb/cli/releases/tag/0.9.0\">0.9.0</a> (uses CRD)</td>\n<td><a href=\"https://kubedb.com/docs/0.9.0/\">User Guide</a></td>\n<td>1.9.x +</td>\n</tr>\n\n<tr>\n<td><a href=\"https://github.com/kubedb/cli/releases/tag/0.8.0\">0.8.0</a> (uses CRD)</td>\n<td><a href=\"https://kubedb.com/docs/0.8.0/\">User Guide</a></td>\n<td>1.9.x +</td>\n</tr>\n\n<tr>\n<td><a href=\"https://github.com/kubedb/cli/releases/tag/0.6.0\">0.6.0</a> (uses TPR)</td>\n<td><a href=\"https://github.com/kubedb/cli/tree/0.6.0/docs\">User Guide</a></td>\n<td>1.5.x - 1.7.x</td>\n</tr>\n</tbody>\n</table>\n\n<h2>Installation</h2>\n\n<p>To install KubeDB, please follow the guide <a href=\"https://kubedb.com/docs/latest/setup/install/\">here</a>.</p>\n\n<h2>Using KubeDB</h2>\n\n<p>Want to learn how to use KubeDB? Please start <a href=\"https://kubedb.com/docs/latest/guides/\">here</a>.</p>\n\n<h2>KubeDB API Clients</h2>\n\n<p>You can use KubeDB api clients to programmatically access its CRD objects. Here are the supported clients:</p>\n\n<ul>\n<li>Go: <a href=\"https://github.com/kubedb/apimachinery/tree/master/client/clientset/versioned\">https://github.com/kubedb/apimachinery</a></li>\n<li>Java: <a href=\"https://github.com/kubedb-client/java\">https://github.com/kubedb-client/java</a></li>\n</ul>\n\n<h2>Contribution guidelines</h2>\n\n<p>Want to help improve KubeDB? Please start <a href=\"https://kubedb.com/docs/latest/welcome/contributing/\">here</a>.</p>\n\n<hr />\n\n<p><strong>KubeDB binaries collects anonymous usage statistics to help us learn how the software is being used and how we can improve it. To disable stats collection, run the operator with the flag</strong> <code>--enable-analytics=false</code>.</p>\n\n<hr />\n\n<h2>Support</h2>\n\n<p>We use Slack for public discussions. To chit chat with us or the rest of the community, join us in the <a href=\"https://kubernetes.slack.com/messages/C8149MREV/\">Kubernetes Slack team</a> channel <code>#kubedb</code>. To sign up, use our <a href=\"http://slack.kubernetes.io/\">Slack inviter</a>.</p>\n\n<p>To receive product announcements, please join our <a href=\"https://groups.google.com/forum/#!forum/kubedb\">mailing list</a> or follow us on <a href=\"https://twitter.com/KubeDB\">Twitter</a>. Our mailing list is also used to share design docs shared via Google docs.</p>\n\n<p>If you have found a bug with KubeDB or want to request for new features, please <a href=\"https://github.com/kubedb/project/issues/new\">file an issue</a>.</p>\n",
+    "markdown": "# KubeDB\n\n[![Go Report Card](https://goreportcard.com/badge/kubedb.dev/cli)](https://goreportcard.com/report/kubedb.dev/cli)\n[![Build Status](https://travis-ci.org/kubedb/cli.svg?branch=master)](https://travis-ci.org/kubedb/cli)\n[![codecov](https://codecov.io/gh/kubedb/cli/branch/master/graph/badge.svg)](https://codecov.io/gh/kubedb/cli)\n[![Docker Pulls](https://img.shields.io/docker/pulls/kubedb/operator.svg)](https://hub.docker.com/r/kubedb/operator/)\n[![Slack](http://slack.kubernetes.io/badge.svg)](http://slack.kubernetes.io/#kubedb)\n[![mailing list](https://img.shields.io/badge/mailing_list-join-blue.svg)](https://groups.google.com/forum/#!forum/kubedb)\n[![Twitter](https://img.shields.io/twitter/follow/kubedb.svg?style=social&logo=twitter&label=Follow)](https://twitter.com/intent/follow?screen_name=kubedb)\n\n> Making running production-grade databases easy on Kubernetes\n\nRunning production quality database in Kubernetes can be tricky to say the least. In the early days of Kubernetes, replication controllers were used to run a single pod for a database. With the introduction of StatefulSet, it became easy to run a docker container for any database. But what about monitoring, taking periodic backups, restoring from backups or cloning from an existing database? KubeDB is a framework for writing operators for any database that support the following operational requirements:\n\n - Create a database declaratively using CRD.\n - Take one-off backups or periodic backups to various cloud stores, eg, S3, GCS, Azure etc.\n - Restore from backup or clone any database.\n - Native integration with Prometheus for monitoring via [CoreOS Prometheus Operator](https://github.com/coreos/prometheus-operator).\n - Apply deletion lock to avoid accidental deletion of database.\n - Keep track of deleted databases, cleanup prior snapshots with a single command.\n - Use cli to manage databases like kubectl for Kubernetes.\n\nKubeDB is developed at [AppsCode](https://twitter.com/AppsCodeHQ) to run their SAAS platform on Kubernetes. Currently KubeDB includes support for following datastores:\n - Postgres\n - Elasticsearch\n - Etcd\n - MySQL / MariaDB / Percona Server for MySQL\n - MongoDB\n - Redis\n - Memcached\n\n## Supported Versions\nPlease pick a version of KubeDB that matches your Kubernetes installation.\n\n| KubeDB Version                                                                     | Docs                                                                | Kubernetes Version |\n|------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------|\n| [0.12.0](https://github.com/kubedb/cli/releases/tag/0.12.0) (uses CRD)             | [User Guide](https://kubedb.com/docs/0.12.0/)                       | 1.9.x +            |\n| [0.11.0](https://github.com/kubedb/cli/releases/tag/0.11.0) (uses CRD)             | [User Guide](https://kubedb.com/docs/0.11.0/)                       | 1.9.x +            |\n| [0.10.0](https://github.com/kubedb/cli/releases/tag/0.10.0) (uses CRD)             | [User Guide](https://kubedb.com/docs/0.10.0/)                       | 1.9.x +            |\n| [0.9.0](https://github.com/kubedb/cli/releases/tag/0.9.0) (uses CRD)               | [User Guide](https://kubedb.com/docs/0.9.0/)                        | 1.9.x +            |\n| [0.8.0](https://github.com/kubedb/cli/releases/tag/0.8.0) (uses CRD)               | [User Guide](https://kubedb.com/docs/0.8.0/)                        | 1.9.x +            |\n| [0.6.0](https://github.com/kubedb/cli/releases/tag/0.6.0) (uses TPR)               | [User Guide](https://github.com/kubedb/cli/tree/0.6.0/docs)         | 1.5.x - 1.7.x      |\n\n## Installation\nTo install KubeDB, please follow the guide [here](https://kubedb.com/docs/latest/setup/install/).\n\n## Using KubeDB\nWant to learn how to use KubeDB? Please start [here](https://kubedb.com/docs/latest/guides/).\n\n## KubeDB API Clients\nYou can use KubeDB api clients to programmatically access its CRD objects. Here are the supported clients:\n\n- Go: [https://github.com/kubedb/apimachinery](https://github.com/kubedb/apimachinery/tree/master/client/clientset/versioned)\n- Java: https://github.com/kubedb-client/java\n\n## Contribution guidelines\nWant to help improve KubeDB? Please start [here](https://kubedb.com/docs/latest/welcome/contributing/).\n\n---\n\n**KubeDB binaries collects anonymous usage statistics to help us learn how the software is being used and how we can improve it. To disable stats collection, run the operator with the flag** `--enable-analytics=false`.\n\n---\n\n## Support\nWe use Slack for public discussions. To chit chat with us or the rest of the community, join us in the [Kubernetes Slack team](https://kubernetes.slack.com/messages/C8149MREV/) channel `#kubedb`. To sign up, use our [Slack inviter](http://slack.kubernetes.io/).\n\nTo receive product announcements, please join our [mailing list](https://groups.google.com/forum/#!forum/kubedb) or follow us on [Twitter](https://twitter.com/KubeDB). Our mailing list is also used to share design docs shared via Google docs.\n\nIf you have found a bug with KubeDB or want to request for new features, please [file an issue](https://github.com/kubedb/project/issues/new).\n"
+  },
+  "supportLinks": {
+    "Support URL": "https://appscode.freshdesk.com",
+    "Website URL": "https://www.kubedb.com"
+  },
+  "stripeProductID": "prod_FARWKSytMzmLb9",
+  "plans": {
+    "Community": {
+      "price": 0
+    },
+    "Golden_M2M": {
+      "price": 999
+    },
+    "Golden_Y2Y": {
+      "price": 799
+    },
+    "Standard_M2M": {
+      "price": 599
+    },
+    "Standard_Y2Y": {
+      "price": 399
+    }
+  }
+}

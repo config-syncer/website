@@ -1,0 +1,628 @@
+{
+  "key": "stash-mysql",
+  "name": "MySQL",
+  "fullname": "Stash MySQL Addon",
+  "tagline": "MySQL backup and restore plugin for Stash by AppsCode",
+  "summary": "MySQL backup and restore plugin for Stash by AppsCode",
+  "published": true,
+  "author": "AppsCode Inc.",
+  "repoURL": "https://github.com/stashed/mysql",
+  "starRepo": "stashed/stash",
+  "docRepo": "stashed/mysql",
+  "badges": [
+    {
+      "url": "github/stars/stashed/mysql",
+      "alt": "GitHub Stars",
+      "logo": "github"
+    },
+    {
+      "url": "docker/pulls/stashed/mysql",
+      "alt": "Docker Pulls",
+      "logo": "docker"
+    }
+  ],
+  "versions": [
+    {
+      "version": "master",
+      "hostDocs": false,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v22",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v21",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.21-v20",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.21-v19",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.21-v18",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v17",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v16",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.21-v15",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.21-v14",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v13",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v12",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v11",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v10",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v9",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v8",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v7",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v4",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v3",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v2",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21-v1",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.21",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v28",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v27",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-v26",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-v25",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-v24",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v23",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v22",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-v21",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-v20",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v19",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v18",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v17",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v16",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v15",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v14",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v13",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v12",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v11",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v10",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v9",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v8",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v7",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v4",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v3",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v2",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-v1",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-rc.20200827",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-rc.20200826",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.14-beta.20200826",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-beta.20200709",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.14-beta.20200708",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-v28",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v27",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-v26",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-v25",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-v24",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v23",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v22",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-v21",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-v20",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v19",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v18",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v17",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v16",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v15",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v14",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v13",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v12",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v11",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v10",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v9",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v8",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v7",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v4",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v3",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v2",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-v1",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-rc.20200827",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-rc.20200826",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "8.0.3-beta.20200826",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-beta.20200709",
+      "hostDocs": true
+    },
+    {
+      "version": "8.0.3-beta.20200708",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-v28",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v27",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-v26",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-v25",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-v24",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v23",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v22",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-v21",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-v20",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v19",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v18",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v17",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v16",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v15",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v14",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v13",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v12",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v11",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v10",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v9",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v8",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v7",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v6",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v5",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v4",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v3",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v2",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-v1",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-rc.20200827",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-rc.20200826",
+      "hostDocs": true,
+      "show": true
+    },
+    {
+      "version": "5.7.25-beta.20200826",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-beta.20200709",
+      "hostDocs": true
+    },
+    {
+      "version": "5.7.25-beta.20200708",
+      "hostDocs": true
+    }
+  ],
+  "latestVersion": "8.0.21-v22"
+}
