@@ -1,0 +1,14 @@
+---
+title: Configuration Syncer | Kubernetes
+description: Configuration Syncer for Kubernetes
+menu:
+  docs_v0.14.4:
+    identifier: config-syncer
+    parent: guides
+    name: Configuration Syncer
+    weight: 20
+menu_name: docs_v0.14.4
+info:
+  version: v0.14.4
+---
+
