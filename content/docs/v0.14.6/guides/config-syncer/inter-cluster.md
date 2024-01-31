@@ -2,19 +2,19 @@
 title: Synchronize Configuration across Kubernetes Clusters
 description: Synchronize Configuration across Kubernetes Clusters
 menu:
-  docs_v0.14.5:
+  docs_v0.14.6:
     identifier: inter-cluster-syncer
     name: Across Clusters
     parent: config-syncer
     weight: 15
 product_name: kubed
-menu_name: docs_v0.14.5
+menu_name: docs_v0.14.6
 section_menu_id: guides
 info:
-  version: v0.14.5
+  version: v0.14.6
 ---
 
-> New to Config Syncer? Please start [here](/docs/v0.14.5/concepts/README).
+> New to Config Syncer? Please start [here](/docs/v0.14.6/concepts/README).
 
 # Synchronize Configuration across Clusters
 
@@ -83,7 +83,7 @@ users:
     client-key-data: ...
 ```
 
-Now, deploy Config Syncer operator in your cluster following the steps [here](/docs/v0.14.5/setup/install). Below you can see the command to install Config Syncer using Helm 3.
+Now, deploy Config Syncer operator in your cluster following the steps [here](/docs/v0.14.6/setup/install). Below you can see the command to install Config Syncer using Helm 3.
 
 ```bash
 $ rm -rf $HOME/.kube/config
@@ -115,8 +115,14 @@ Once the operator pod is running, go to the next section.
 At first, create a ConfigMap called `omni` in the `default` namespace. This will be our source ConfigMap.
 
 ```bash
+$ kubectl create namespace demo
+namespace "demo" created
+
 $ kubectl apply -f ./docs/examples/cluster-syncer/demo.yaml
 configmap "omni" created
+
+$ kubectl annotate configmap omni kubed.appscode.com/sync="" -n demo
+configmap "omni" annotated
 ```
 
 Now, apply the `kubed.appscode.com/sync-contexts: "kind-c1,kind-c2"` annotation to ConfigMap `omni`.
@@ -128,9 +134,9 @@ configmap "omni" annotated
 
 It will create configmap "omni" in `cluster-1` and `cluster-2`. For `cluster-1` it will sync into source namespace `default`  since no namespace specified in `context-1` and for `cluster-2` it will sync into `demo-cluster-2` namespace since namespace specified in `context-2`. Here we assume that those namespaces already exits in the respective clusters.
 
-Other concepts like updating source configmap, removing annotation, origin annotation, origin labels, etc. are similar to the tutorial described [here](/docs/v0.14.5/guides/config-syncer/intra-cluster).
+Other concepts like updating source configmap, removing annotation, origin annotation, origin labels, etc. are similar to the tutorial described [here](/docs/v0.14.6/guides/config-syncer/intra-cluster).
 
 ## Next Steps
 
-- Need to keep some configuration synchronized across namespaces? Try [Config Syncer config syncer](/docs/v0.14.5/guides/config-syncer/intra-cluster).
-- Want to hack on Config Syncer? Check our [contribution guidelines](/docs/v0.14.5/CONTRIBUTING).
+- Need to keep some configuration synchronized across namespaces? Try [Config Syncer config syncer](/docs/v0.14.6/guides/config-syncer/intra-cluster).
+- Want to hack on Config Syncer? Check our [contribution guidelines](/docs/v0.14.6/CONTRIBUTING).
