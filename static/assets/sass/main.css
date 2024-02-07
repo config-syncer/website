@@ -10372,7 +10372,7 @@ Responsive Classes
   background: linear-gradient(39deg, rgba(63, 48, 218, 0.2) 0%, rgba(81, 71, 69, 0.2) 51%, rgba(175, 0, 208, 0.2) 91%, rgba(81, 71, 69, 0.1) 100%);
 }
 .hero-area.is-product.is-dark.is-gradient {
-  background: linear-gradient(-45deg, #a8356d, #940148, #4c346f, #3334f5);
+  background: linear-gradient(-45deg, #a8356d, #940148, #4c346f, var(--ac-primary));
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
 }
@@ -11704,7 +11704,6 @@ Responsive Classes
   align-items: center;
   position: relative;
   z-index: 1;
-  border: 2px solid var(--ac-primary);
 }
 .public-pricing-wrapper:after {
   position: absolute;
