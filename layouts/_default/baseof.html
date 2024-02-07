@@ -563,6 +563,11 @@
               <li class="nav-item">
                 <a href="/docs/{{ $p.latestVersion }}/welcome/" class="link">{{ .Name }}</a>
               </li>
+              {{ else if eq .Name "Pricing" }}
+              <li class="nav-item is-relative">
+                <a href="pricing" class="link">{{ .Name }}</a>
+                <span class="whats-new bubble is-block" style="right: -8px; top: 0;"></span>
+              </li>
               {{ else }}
               <li class="nav-item">
                 <a href="{{.URL}}" class="link">{{ .Name }}</a>
