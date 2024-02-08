@@ -408,6 +408,7 @@
 
     .card-body {
       padding: 30px 20px;
+      min-height: 148px;
 
       p {
         font-style: normal;
@@ -420,18 +421,18 @@
 
       .button {
         background: rgba(77, 77, 203, 0.1);
-        border: 1px solid #4d4dcb;
+        border: 1px solid $ac-primary;
         box-sizing: border-box;
         border-radius: 4px;
         font-size: 16px;
-        color: #4d4dcb;
+        color: $ac-primary;
         font-weight: 500;
         font-family: Roboto;
         height: 41px;
         transition: 0.3s ease-in-out;
 
         &:hover {
-          background-color: #4d4dcb;
+          background-color: $ac-primary;
           color: $ac-white !important;
         }
       }
@@ -446,7 +447,7 @@
           height: 41px;
 
           &:focus {
-            border: 1px solid #4d4dcb;
+            border: 1px solid $ac-primary;
             border-radius: 4px;
           }
         }
@@ -455,7 +456,7 @@
           position: absolute;
           right: 0;
           top: 0;
-          background-color: #4d4dcb;
+          background-color: $ac-primary;
           color: $ac-white;
           border: none;
           z-index: 9;
@@ -465,7 +466,7 @@
           }
 
           &:hover {
-            // background-color: darken($color: #4d4dcb, $amount: 20);
+            // background-color: darken($color: $ac-primary, $amount: 20);
             color: $ac-white;
           }
         }

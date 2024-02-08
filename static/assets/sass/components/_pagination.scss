@@ -20,7 +20,7 @@
       text-align: center;
       border-radius: 3px;
       &.is-active {
-        background: #4d4dcb;
+        background: $ac-primary;
         color: $ac-white;
       }
     }

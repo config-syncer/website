@@ -48,13 +48,14 @@
         letter-spacing: .1px;
       }
       .icon {
-        width: 16px;
-        height: 16px;
-        border: 1px solid #1C1C1C;
-        line-height: 16px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #e7e7e7;
+        line-height: 24px;
         font-size: 12px;
         border-radius: 50%;
         cursor: pointer;
+        text-align: center;
       }
     }
     .accordion-body {
