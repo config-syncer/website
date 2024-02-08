@@ -8050,6 +8050,15 @@ strong {
   line-height: 1.2;
   display: none;
 }
+.whats-new.bubble::after, .whats-new.bubble::before {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.whats-new.bubble::after {
+  width: 8px;
+  height: 8px;
+}
 .whats-new:before {
   content: "";
   position: absolute;
@@ -8858,6 +8867,16 @@ video {
   position: relative;
   z-index: 99;
   background-color: #ffffff;
+}
+.navbar-area span.whats-new.bubble.is-block {
+  right: -12px;
+  top: 0;
+}
+@media (min-width: 0px) and (max-width: 1023.98px) {
+  .navbar-area span.whats-new.bubble.is-block {
+    right: 32px;
+    top: 4px;
+  }
 }
 
 .navbar-appscode-wrapper {
@@ -11722,6 +11741,11 @@ Responsive Classes
 }
 .cta-area .cta-area-inner p {
   color: #ffffff;
+}
+@media (min-width: 0px) and (max-width: 1023.98px) {
+  .cta-area .cta-buttons {
+    justify-content: center !important;
+  }
 }
 
 /****************************************

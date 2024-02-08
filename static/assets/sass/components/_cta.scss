@@ -21,6 +21,11 @@
       color: $ac-white;
     }
   }
+  @media (min-width: 0px) and (max-width: 1023.98px) {
+    .cta-buttons {
+      justify-content: center !important;
+    }
+  }
 }
 
 /****************************************

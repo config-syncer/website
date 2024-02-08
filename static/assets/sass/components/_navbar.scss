@@ -3,6 +3,14 @@
   position: relative;
   z-index: 99;
   background-color: $ac-white;
+  span.whats-new.bubble.is-block {
+    right: -12px;
+    top: 0;
+    @media (min-width: 0px) and (max-width: 1023.98px) {
+      right: 32px;
+      top: 4px;
+    }
+  }  
 }
 
 .navbar-appscode-wrapper {
@@ -190,7 +198,7 @@
         padding: 0.5rem 0;
         transition: 0.3s ease-in-out;
         position: relative;
-        z-index: 1;
+        z-index: 1; 
 
         &.is-active {
           color: $ac-primary;
