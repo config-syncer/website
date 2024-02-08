@@ -43,7 +43,7 @@
   <div class="container">
     <!-- public pricing start -->
     <div class="public-pricing-wrapper">
-      <div class="pricing">
+      <!-- <div class="pricing">
         <h2>
           <span>$1200</span> 
           <strong>1 K8s Cluster <br> /year</strong>
@@ -57,7 +57,18 @@
           </span>
           <span>CONTACT US</span>
         </a>
-      </div>
+      </div> -->
+
+      <script async
+        src="https://js.stripe.com/v3/buy-button.js">
+      </script>
+
+      <stripe-buy-button
+        buy-button-id="buy_btn_1OhU6lLWwiPDkOONoGs834YU"
+        publishable-key="pk_live_lEc52jOY4pRhWGJLmRITLC5e"
+      >
+      </stripe-buy-button>
+
       <div class="notification-message">
         <p><span> <img src="/assets/images/icon/note-icon.png" alt="note-icon"> Volume <strong>discount available</strong></span> if # of Clusters > 50.
       </div>
