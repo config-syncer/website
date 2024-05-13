@@ -106,6 +106,10 @@
       min-height: auto;
       align-items: center;
       margin-right: 3.8rem;
+      
+      @media (min-width: 1024px) and (max-width: 1216px) {
+        margin-right: 2rem;
+      }
 
       a {
         display: flex;
@@ -153,6 +157,9 @@
             color: $ac-white;
           }
         }
+      }
+      @media (min-width: 1024px) and (max-width: 1216px) {
+        gap: 8px;
       }
 
       @media (min-width: 0px) and (max-width: 1023px) {
@@ -1251,7 +1258,7 @@ Responsive Classes
 
     ul {
       .nav-item {
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
       }
     }
   }
