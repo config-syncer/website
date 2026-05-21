@@ -136,15 +136,6 @@
       }
     ]
   },
-  "open_source": {
-    "title": "We Build and Contribute to Open Source",
-    "description": "At Appscode, open source fuels everything we do. Our engineers contribute to major cloud-native and observability projects, extending the Prometheus ecosystem for community and enterprise innovation.",
-    "cta_text": "Explore Our Open Source Contributions",
-    "image": {
-      "src": "/assets/images/services/open-source.png",
-      "alt": "Appscode Prometheus Open Source Contributions"
-    }
-  },
   "tech_stack": {
     "title": "Diverse Technical Expertise",
     "subtitle": "Serving 100+ customers, our engineers have expertise across cloud-native and security tools.",
@@ -160,6 +151,10 @@
       {
         "name": "Rancher by SUSE",
         "logo": "/assets/images/technical-expertise/rancher.svg"
+      },
+      {
+        "name": "VMware Tanzu",
+        "logo": "/assets/images/technical-expertise/tanzu.png"
       },
       {
         "name": "Amazon EKS",
@@ -248,7 +243,7 @@
       {
         "logo": "/assets/images/services/icons8/ios-glyphs-30-certificate.png",
         "title": "Certified Developers",
-        "description": "50+ engineers specializing in <a href=\"https://kubernetes.io/\">Kubernetes</a>, containers, and cloud-native platforms—helping you build, scale, and automate with confidence."
+        "description": "50+ engineers specializing in <a href=\"https://kubernetes.io/\">Kubernetes</a>, containers, and cloud-native platforms, helping you build, scale, and automate with confidence."
       },
       {
         "icon": "fa fa-briefcase",
@@ -288,7 +283,7 @@
     },
     {
       "question": "Can you work with our existing monitoring infrastructure?",
-      "answer": "Yes — we integrate Prometheus with your current monitoring setup, optimize scraping intervals, configure alerts, set up Grafana dashboards, and provide guidance for continuous monitoring and observability improvement."
+      "answer": "Yes, we integrate Prometheus with your current monitoring setup, optimize scraping intervals, configure alerts, set up Grafana dashboards, and provide guidance for continuous monitoring and observability improvement."
     },
     {
       "question": "What is the typical timeline and engagement model for Prometheus Consulting Services?",

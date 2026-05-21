@@ -153,7 +153,7 @@
   "industries": {
     "title": "Industry Expertise That Delivers Results",
     "subtitle": "We combine deep technical knowledge with domain-specific experience to deliver secure, scalable networking for every industry.",
-    "additional_text": "From enterprises with global datacenters to fast-scaling startups — we’ve got you covered.",
+    "additional_text": "From enterprises with global datacenters to fast-scaling startups - we’ve got you covered.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -187,15 +187,6 @@
       }
     ]
   },
-  "open_source": {
-    "title": "We Love Open Source",
-    "description": "Open source is in our DNA. <a href=\"https://appscode.com/\">AppsCode </a> actively contributes to the cloud-native ecosystem — creating, maintaining, and improving OSS projects that empower developers and enterprises globally.",
-    "cta_text": "Explore Our OSS Contributions",
-    "image": {
-      "src": "/assets/images/services/open-source.png",
-      "alt": "We Love Open Source"
-    }
-  },
   "tech_stack": {
     "title": "Deep Expertise Across Cloud-Native Networking Technologies",
     "subtitle": "Our engineers bring hands-on experience with the most popular CNIs, service meshes, and networking frameworks.",
@@ -211,6 +202,10 @@
       {
         "name": "Rancher by SUSE",
         "logo": "/assets/images/technical-expertise/rancher.svg"
+      },
+      {
+        "name": "VMware Tanzu",
+        "logo": "/assets/images/technical-expertise/tanzu.png"
       },
       {
         "name": "Amazon EKS",
@@ -293,7 +288,7 @@
     },
     {
       "question": "Can you work with our existing cloud infrastructure and applications?",
-      "answer": "Yes — we integrate cloud-native networking practices with your current infrastructure and workloads, optimize traffic management, enforce security policies, and provide guidance to improve network performance and reliability."
+      "answer": "Yes, we integrate cloud-native networking practices with your current infrastructure and workloads, optimize traffic management, enforce security policies, and provide guidance to improve network performance and reliability."
     },
     {
       "question": "What is the typical timeline and engagement model for Cloud-Native Networking Services?",

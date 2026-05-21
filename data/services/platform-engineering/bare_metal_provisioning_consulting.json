@@ -131,15 +131,6 @@
       }
     ]
   },
-  "open_source": {
-    "title": "We Love Open Source",
-    "description": "Our developers contribute to cloud-native projects and leverage open-source solutions to build innovative products.",
-    "cta_text": "Explore Our OSS Contributions",
-    "image": {
-      "src": "/assets/images/services/open-source.png",
-      "alt": "Open Source Contributions"
-    }
-  },
   "tech_stack": {
     "title": "Our Technical Expertise",
     "subtitle": "Our engineers have hands-on experience with over 100 clients in the following technologies:",
@@ -155,6 +146,10 @@
       {
         "name": "Rancher by SUSE",
         "logo": "/assets/images/technical-expertise/rancher.svg"
+      },
+      {
+        "name": "VMware Tanzu",
+        "logo": "/assets/images/technical-expertise/tanzu.png"
       },
       {
         "name": "Amazon EKS",
@@ -243,7 +238,7 @@
       {
         "logo": "/assets/images/services/icons8/ios-glyphs-30-certificate.png",
         "title": "Certified Developers",
-        "description": "50+ engineers specializing in Kubernetes, containers, and cloud-native platforms—helping you build, scale, and automate with confidence."
+        "description": "50+ engineers specializing in Kubernetes, containers, and cloud-native platforms, helping you build, scale, and automate with confidence."
       },
       {
         "icon": "fa fa-briefcase",
@@ -283,7 +278,7 @@
     },
     {
       "question": "Can you work with our existing on-prem infrastructure?",
-      "answer": "Yes — we integrate with your current setup, optimize existing hardware and network configurations, and help transition workloads to more reliable, scalable, and secure on-prem or hybrid environments as needed."
+      "answer": "Yes, we integrate with your current setup, optimize existing hardware and network configurations, and help transition workloads to more reliable, scalable, and secure on-prem or hybrid environments as needed."
     },
     {
       "question": "What is the typical timeline and engagement model for these services?",

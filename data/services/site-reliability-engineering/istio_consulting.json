@@ -110,7 +110,7 @@
       {
         "logo": "/assets/images/services/icons8/ios-glyphs-30-certificate.png",
         "title": "Certified Experts",
-        "description": "50+ engineers specializing in <a href=\"https://kubernetes.io/\">Kubernetes</a>, containers, and cloud-native platforms—helping you build, scale, and automate with confidence"
+        "description": "50+ engineers specializing in <a href=\"https://kubernetes.io/\">Kubernetes</a>, containers, and cloud-native platforms, helping you build, scale, and automate with confidence"
       },
       {
         "icon": "fa fa-briefcase",
@@ -142,7 +142,7 @@
   "industries": {
     "title": "Istio Consulting Across Industries",
     "subtitle": "Decades of cloud-native and service mesh experience across regulated and high-growth industries.",
-    "additional_text": "From global enterprises to fast-growing startups — we’ve seen it all, and built for it all.",
+    "additional_text": "From global enterprises to fast-growing startups - we’ve seen it all, and built for it all.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -176,15 +176,6 @@
       }
     ]
   },
-  "open_source": {
-    "title": "Built on Open Source Values",
-    "description": "We’re proud contributors to <a href=\"https://www.cncf.io/\">CNCF</a> and Istio ecosystem. Open source fuels our innovation and yours.",
-    "cta_text": "See Our OSS Contributions",
-    "image": {
-      "src": "/assets/images/services/open-source.png",
-      "alt": "We Love Open Source"
-    }
-  },
   "tech_stack": {
     "title": "Our Istio Tech Stack Expertise",
     "subtitle": "Certified consultants experienced with leading service mesh and observability tools.",
@@ -200,6 +191,10 @@
       {
         "name": "Rancher by SUSE",
         "logo": "/assets/images/technical-expertise/rancher.svg"
+      },
+      {
+        "name": "VMware Tanzu",
+        "logo": "/assets/images/technical-expertise/tanzu.png"
       },
       {
         "name": "Amazon EKS",
@@ -282,7 +277,7 @@
     },
     {
       "question": "Can you integrate Istio with our existing Kubernetes clusters and applications?",
-      "answer": "Yes — we integrate Istio with your current clusters and workloads, optimize service mesh configurations, enforce security policies, and implement best practices to ensure reliable and observable communication between microservices."
+      "answer": "Yes, we integrate Istio with your current clusters and workloads, optimize service mesh configurations, enforce security policies, and implement best practices to ensure reliable and observable communication between microservices."
     },
     {
       "question": "What is the typical timeline and engagement model for Istio Consulting Services?",

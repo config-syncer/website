@@ -157,15 +157,6 @@
       }
     ]
   },
-  "open_source": {
-    "title": "Proud Open Source Contributors",
-    "description": "<a href=\"https://appscode.com/\">AppsCode </a> actively contributes to <a href=\"https://www.cncf.io/\">CNCF</a> projects like <a href=\"https://kubernetes.io/\">Kubernetes</a>, <a href=\"https://appscode.com/services/prometheus-consulting-services/\">Prometheus</a>, and <a href=\"https://kubevault.com/\">KubeVault</a> — helping financial organizations build on proven, open-source technologies.",
-    "cta_text": "View Our Open Source Contributions",
-    "image": {
-      "src": "/assets/images/services/open-source.png",
-      "alt": "Open Source Contributions"
-    }
-  },
   "tech_stack": {
     "title": "Our Cloud-Native Tech Stack Expertise",
     "subtitle": "Certified engineers with deep experience in Kubernetes, observability, and cloud security tools for banking-grade workloads.",
@@ -181,6 +172,10 @@
       {
         "name": "Rancher by SUSE",
         "logo": "/assets/images/technical-expertise/rancher.svg"
+      },
+      {
+        "name": "VMware Tanzu",
+        "logo": "/assets/images/technical-expertise/tanzu.png"
       },
       {
         "name": "Amazon EKS",
@@ -269,7 +264,7 @@
       {
         "logo": "/assets/images/services/icons8/ios-glyphs-30-certificate.png",
         "title": "Certified Kubernetes Engineers",
-        "description": "50+ engineers specializing in Kubernetes, containers, and cloud-native platforms—helping you build, scale, and automate with confidence"
+        "description": "50+ engineers specializing in Kubernetes, containers, and cloud-native platforms, helping you build, scale, and automate with confidence"
       },
       {
         "icon": "fa fa-briefcase",
@@ -309,7 +304,7 @@
     },
     {
       "question": "Can you integrate cloud-native solutions with our existing banking systems?",
-      "answer": "Yes — we work with your existing core banking, payment, and financial applications, modernize workloads, implement microservices patterns, and integrate cloud-native practices while ensuring regulatory compliance and security standards."
+      "answer": "Yes, we work with your existing core banking, payment, and financial applications, modernize workloads, implement microservices patterns, and integrate cloud-native practices while ensuring regulatory compliance and security standards."
     },
     {
       "question": "What is the typical timeline and engagement model for cloud-native solutions in banking?",

@@ -102,7 +102,7 @@
   "industries": {
     "title": "Industry-Specific DevSecOps Expertise",
     "subtitle": "We bring proven experience across 100+ enterprises to deliver secure, compliant, and resilient DevSecOps architectures.",
-    "additional_text": "From cloud-native startups to Fortune 500 enterprises — AppsCode ensures your software delivery remains fast, compliant, and secure.",
+    "additional_text": "From cloud-native startups to Fortune 500 enterprises, AppsCode ensures your software delivery remains fast, compliant, and secure.",
     "sectors": [
       {
         "icon": "fa fa-bank",
@@ -136,15 +136,6 @@
       }
     ]
   },
-  "open_source": {
-    "title": "Open Source-Driven DevSecOps Innovation",
-    "description": "<a href=\"https://appscode.com/\">AppsCode </a> actively contributes to open-source DevSecOps tools and cloud-native security frameworks, empowering teams to secure and scale faster.",
-    "cta_text": "Explore Our Open Source Work",
-    "image": {
-      "src": "/assets/images/services/open-source.png",
-      "alt": "AppsCode Open Source Contributions"
-    }
-  },
   "tech_stack": {
     "title": "Expertise Across Leading DevSecOps Tools & Frameworks",
     "subtitle": "Our certified engineers bring hands-on experience with the top open-source and enterprise-grade security tools.",
@@ -160,6 +151,10 @@
       {
         "name": "Rancher by SUSE",
         "logo": "/assets/images/technical-expertise/rancher.svg"
+      },
+      {
+        "name": "VMware Tanzu",
+        "logo": "/assets/images/technical-expertise/tanzu.png"
       },
       {
         "name": "Amazon EKS",
@@ -237,7 +232,7 @@
       {
         "logo": "/assets/images/services/icons8/ios-glyphs-30-certificate.png",
         "title": "World-Class Kubernetes Expertise",
-        "description": "50+ engineers specializing in <a href=\"https://kubernetes.io/\">Kubernetes</a>, containers, and cloud-native platforms—helping you build, scale, and automate with confidence"
+        "description": "50+ engineers specializing in <a href=\"https://kubernetes.io/\">Kubernetes</a>, containers, and cloud-native platforms, helping you build, scale, and automate with confidence"
       },
       {
         "icon": "fa fa-briefcase",
@@ -288,7 +283,7 @@
     },
     {
       "question": "Can you work with our existing DevOps processes?",
-      "answer": "Yes — we integrate security into your current DevOps workflows, enhance CI/CD pipelines with automated security checks, implement policies and best practices, and provide guidance for continuous monitoring and compliance."
+      "answer": "Yes, we integrate security into your current DevOps workflows, enhance CI/CD pipelines with automated security checks, implement policies and best practices, and provide guidance for continuous monitoring and compliance."
     },
     {
       "question": "What is the typical timeline and engagement model for DevSecOps Consulting Services?",
