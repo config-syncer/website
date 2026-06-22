@@ -53,6 +53,15 @@ menu:
   main:
   - name: Documentation
     weight: 20
+  product_configsyncer:
+  - name: Features
+    url: /features/
+    weight: 10
+  - name: Pricing
+    url: /pricing/
+    weight: 20
+  - name: Documentation
+    weight: 30
 markup:
   goldmark:
     renderer:
