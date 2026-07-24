@@ -50,9 +50,15 @@ params:
   learn_url: https://appscode.com/learn
   docs_url: https://appscode.com/docs
 menu:
-  main:
+  product_configsyncer:
   - name: Documentation
+    weight: 10
+  - name: Features
+    url: /features/
     weight: 20
+  - name: Pricing
+    url: /pricing/
+    weight: 30
 markup:
   goldmark:
     renderer:
